@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Homework</title>
+</head>
+<body onload= "funOnload()">
+
+	<div class = "HelloUserBlock" >
+		<p id = "HelloUser" > </p>
+	</div>
+
+	<div class="solutionBlock" style="display: none" id="solutionBlock" >
+		<button name = "buttonCloseSolution" id = "closeSolution" onclick="closeWindowSolution(solutionBlock)">×</button>
+
+		<h3 id="solutionOutput"></h3>
+	</div>
+
+	<div class = "BackButton">
+		<a href="#mainMenu" id = "upButton"> <img src="image/arrow.png" alt="Иконка" id = "UpImage"> </a> 
+	</div>
+	
+	<div id="inform" style="display: none" onclick="closeWindow(inform)">
+		
+		<div id="inform2"></div>
+		
+		<div id="inform3"><img src="image/fow.png" alt="Красивый фон" id = "fonImage"></div>
+
+	</div>
+	
+	<p><a name="mainMenu" id = "linkInBlock"></a></p>
+
+	<div class = "menu">
+
+		<div class = "navigation">
+
+			<p><a href="#first" id = "displacement">Немного о JavaScript</a></p>
+			<p><a href="#second" id = "displacement">Ввод имени</a></p>
+			<p><a href="#third" id = "displacement">Площадь треугольника</a></p>
+			<p><a href="#fourth" id = "displacement">Сравнение строк</a></p>
+			<p><a href="#fifth" id = "displacement">Массив чисел</a></p>
+			<p><a href="#sixth" id = "displacement">Таймер</a></p>
+			<p><a href="#seventh" id = "displacement">Небольшой тест</a></p>
+			<p><a href="#eightth" id = "displacement">Сюрприз</a></p>
+		
+		</div>
+
+		<div class = "menuIntro">
+
+			<div class="logotipe">
+				<img src="image/logo.png" alt="Логотип JS" id = "logoImage">
+			</div>
+
+			<div class="intro">
+				<p>О, друг! Ты вовремя. Мне как раз есть, что тебе предложить. Не хочешь немного JavaScript?</p>
+				<p>Забудь все эти скучные и сложные статически типизированные языки программирования!</p>
+				<p>Здесь мы пропагандируем программирование без боли и слёз.</p>
+				<p>А значит наливай себе чай, садись поудобнее, это время мы проведем с пользой...</p>
+			</div>
+
+		</div>
+
+	</div>
+
+	<p><a name="first" id = "linkInBlock"></a></p>
+
+	<div class = "about">
+
+
+
+		<div class = "textAbout">
+		
+			<h1>Немножко информации о JavaScript</h1>
+			<p>JavaScript — язык сценариев, или скриптов. Скрипт представляет собой программный код — набор инструкций, который не требует предварительной обработки (например, компиляции) перед запуском. Код JavaScript интерпретируется движком браузера во время загрузки веб-страницы. Интерпретатор браузера выполняет построчный анализ, обработку и выполнение исходной программы или запроса.</p>
+			<p>JavaScript — объектно-ориентированный язык с прототипным наследованием. Он поддерживает несколько встроенных объектов, а также позволяет создавать или удалять свои собственные (пользовательские) объекты. Объекты могут наследовать свойства непосредственно друг от друга, образуя цепочку объект-прототип.</p>
+			<p>В основу создания JavaScript была положена идея динамического управления объектами HTML-документов без перезагрузки текущей страницы (так называемые бессерверные сценарии).</p>
+		
+		</div>
+
+		<div class = "imageAbout">
+
+			<img src="image/jsCodeFoto.jpg" alt="JavaScript Code" id = "JSImage">
+			
+		</div>
+		
+	</div>
+
+	<p><a name="second" id = "linkInBlock"></a></p>
+
+	<div class = "userName">
+
+		<h1>Сначала знакомство</h1>
+
+		<div class = "formForUser">
+
+			
+
+			<form name="test" method="post">
+  				
+   					<input id="dataInput" type="text" name = "userNameInForm" placeholder="Введи свое имя">  				
+  
+ 			</form>
+
+ 		</div>
+
+ 		<div class = "buttonForUser">
+
+			<button name = "buttonForUserName" id = "buttons" onclick="func1()">Проверим результат?</button>
+
+ 		</div>
+
+		 <div class="howDo">
+
+			<input type="image" src="image/que.png" alt="Иконка" id = "faqImage" onclick="solution(1)">
+
+ 		</div>
+
+	</div>
+
+	<p><a name="third" id = "linkInBlock"></a></p>
+
+	<div class = "area">
+
+		<h1>Время геометрии!</h1>
+
+		
+		<p>Будем считать площадь треугольника</p>
+		
+		<div class = "geometry">
+			<form name="test2" method="post" id = "test2">
+
+				  
+				<input id="dataInput" type="text" name = "h" placeholder="Введи тут его высоту"> 
+
+				
+				<input id="dataInput" type="text" name = "w" placeholder="А тут основание треугольника">
+
+			</form>
+		</div>
+
+		<div>
+
+			<button name = "buttonForGeom" id = "buttons" onclick="geom()">Давай считать</button>
+			<button name = "buttonForGeom" id = "buttons" onclick="geomErase()">Стереть</button>
+
+		</div>	
+
+		<div><p id = "result"> </p></div>
+		<div class="howDo">
+
+			<input type="image" src="image/que.png" alt="Иконка" id = "faqImage" onclick="solution(2)">
+
+ 		</div>	
+
+		
+	</div>
+
+	<p><a name="fourth" id = "linkInBlock"></a></p>
+
+	<div class = "compareStrings">
+
+		<h1>Давай попробуем сравнить две фразы</h1>
+
+		<div class = "strings">			
+			
+			<form name="test3" method="post">
+
+				
+				<input id="dataInput" type="text" name = "str1" placeholder="Первая строка">
+
+				
+				<input id="dataInput" type="text" name = "str2" placeholder="Вторая строка"> 
+
+			</form>				
+
+		</div>
+
+		<div>
+			<button name = "buttonForGeom" id = "buttons" onclick="comStr()">Тут ответ</button>
+			<button name = "buttonForGeom" id = "buttons" onclick="strErase()">Стереть</button>
+		</div>
+
+			
+		<p id = "boolResult"> </p>
+		<div class="howDo">
+
+			<input type="image" src="image/que.png" alt="Иконка" id = "faqImage" onclick="solution(3)">
+
+ 		</div>
+		
+	</div>
+
+	<p><a name="fifth" id = "linkInBlock"></a></p>
+
+	<div class = "array">
+
+		<h1>Немного поработаем с массивом</h1>
+		
+		<div class = "numbers">
+			
+			<form name="test4" method="post">
+
+				<input id="dataInput" type="text" name = "arr" placeholder= "Введи пять чисел через пробел"> 			
+
+			</form>
+
+		</div>
+
+		<div>
+
+			<button name = "buttonFoArr" id = "buttons" onclick="arrAddElement()">Добавить число</button>
+			<button name = "buttonFoArr" id = "buttons" onclick="arrRes()">Результат</button>
+			<button name = "buttonFoArr" id = "buttons" onclick="arrErase()">Стереть</button>
+
+		</div>
+
+		<p id = "arrElem"> </p>
+			
+		<p id = "arrResult"> </p>
+
+		<div class="howDo">
+
+			<input type="image" src="image/que.png" alt="Иконка" id = "faqImage" onclick="solution(4)">
+
+ 		</div>
+		
+	</div>
+
+	<p><a name="sixth" id = "linkInBlock"></a></p>
+
+	<div class = "timer">
+
+		<h1>Таймер!</h1>
+
+		<div>
+			
+			<form class = "timerForms" name="testTimer" method="post">
+
+				<input id="dataInputTimer" type="text" name = "hour" placeholder= "Часы"> 
+				<p class = "colon">:</p>
+				<input id="dataInputTimer" type="text" name = "min" placeholder= "Минуты">
+				<p class = "colon">:</p>
+				<input id="dataInputTimer" type="text" name = "sec" placeholder= "Секунды">			
+
+			</form>
+
+		</div>
+		
+		<div class = "numbers">
+			
+			<button name = "startTimer" id = "buttonStart" onclick="Start()">Старт</button>
+			<button name = "stopTimer" id = "buttonsStop" onclick="Stop()">Стоп</button>
+			<button name = "resultTimer" id = "buttonsErase" onclick="Erase()">Стереть</button>
+
+		</div>
+
+		<p id = "secCounter"> </p>
+		<div class="howDo">
+
+			<input type="image" src="image/que.png" alt="Иконка" id = "faqImage" onclick="solution(5)">
+
+ 		</div>
+		
+	</div>
+
+	<p><a name="seventh" id = "linkInBlock"></a></p>
+
+	<div class = "test">
+
+		<h1 class="testHead">Небольшой тест</h1>
+
+		<div class="testMain">
+
+			<div class = "testForm">
+			
+				<form name="test5" method="post"  class = 'testFormIn'>
+
+					<div class = 'testFormIn1'>
+
+						<fieldset>
+
+							<legend>О каком языке программирования мы сейчас говорили?</legend>
+						
+							 	
+							<label><input type="radio" name = "ans1" value="Java">Java</label>
+							 	
+							<label><input type="radio" name = "ans1" value="C#">C#</label>				
+							 	
+							<label><input type="radio" name = "ans1" value="JavaScript">JavaScript</label>	
+
+						</fieldset>
+
+						<fieldset>
+
+							<legend>Что из перечисленного является типом данных в JavaScript?</legend>
+						
+							 	
+							<label><input type="radio" name = "ans2" value="Integer">Integer</label>
+							 	
+							<label><input type="radio" name = "ans2" value="Number">Number</label>				
+							 	
+							<label><input type="radio" name = "ans2" value="Double">Double</label>	
+
+						</fieldset>
+
+						<fieldset>
+
+							<legend>Глобальный объект предоставляемый браузером, внутри которого содержатся все встроенные в браузерный JavaScript функции и свойства?</legend>
+						
+							 	
+							<label><input type="radio" name = "ans3" value="Window">Window</label>
+							 	
+							<label><input type="radio" name = "ans3" value="Object">Object</label>				
+							 	
+							<label><input type="radio" name = "ans3" value="Main">Main</label>	
+
+						</fieldset>
+
+						<fieldset>
+
+							<legend>Что в JavaScript делает тройное равно (===)?</legend>
+						
+							 	
+							<label><input type="radio" name = "ans4" value="Присваивает переменной значение">Присваивает переменной значение</label>
+							 	
+							<label><input type="radio" name = "ans4" value="Это строгое сравнение величин">Это строгое сравнение величин</label>				
+							 	
+							<label><input type="radio" name = "ans4" value="Такого в JavaScript нет">Такого в JavaScript нет</label>	
+
+						</fieldset>
+
+						<fieldset>
+
+							<legend>А двойное равно(==)?</legend>
+							
+							 	
+							<label><input type="radio" name = "ans5" value="Такое тоже есть?!">Такое тоже есть?!</label>
+							 	
+							<label><input type="radio" name = "ans5" value="Ну это точно присваивает переменной значение">Ну это точно присваивает переменной значение</label>				
+							 	
+							<label><input type="radio" name = "ans5" value="Сравнивает с приведением величин к общему типу">Сравнивает с приведением величин к общему типу</label>	
+
+						</fieldset>
+
+					</div>
+
+					<div class = 'testFormIn2'>
+
+						<fieldset>
+
+							<legend>Тебе нравится мой сайт?</legend>
+							
+							 	
+							<label><input type="radio" name = "ans6" value="Он идеален">Он идеален</label>
+							 	
+							<label><input type="radio" name = "ans6" value="Я не очень хороший человек">Я не очень хороший человек</label>				
+							 	
+							<label><input type="radio" name = "ans6" value="Я очень нехороший человек">Я очень нехороший человек</label>	
+
+						</fieldset>
+
+						<fieldset>
+
+							<legend>Как объявляются переменные в JavaScript?</legend>
+							
+							 	
+							<label><input type="radio" name = "ans7" value="var, let, const">var, let, const</label>
+							 	
+							<label><input type="radio" name = "ans7" value="public">public</label>				
+							 	
+							<label><input type="radio" name = "ans7" value="Торжественно и громко">Торжественно и громко</label>	
+
+						</fieldset>
+
+						<fieldset>
+
+							<legend>JavaScript — это...</legend>
+							
+							 	
+							<label><input type="radio" name = "ans8" value="язык сценариев, или скриптов">язык сценариев, или скриптов</label>
+							 	
+							<label><input type="radio" name = "ans8" value="как Java только Script">как Java только Script</label>				
+							 	
+							<label><input type="radio" name = "ans8" value="Что это?">Что это?</label>	
+
+						</fieldset>
+
+						<fieldset>
+
+							<legend>Отметь второй вариант</legend>
+							
+							 	
+							<label><input type="radio" name = "ans9" value="Не этот">Не этот</label>
+							 	
+							<label><input type="radio" name = "ans9" value="Этот">Этот</label>				
+							 	
+							<label><input type="radio" name = "ans9" value="Левее">Левее</label>	
+
+						</fieldset>
+
+						<fieldset>
+
+							<legend>Тебе понравился тест?</legend>
+							
+							 	
+							<label><input type="radio" name = "ans10" value="Очень понравился">Очень понравился</label>
+							 	
+							<label><input type="radio" name = "ans10" value="Ну неплохо">Ну неплохо</label>				
+							 	
+							<label><input type="radio" name = "ans10" value="Такое себе">Такое себе</label>	
+
+						</fieldset>
+
+					</div>	
+
+				</form>
+
+				<div class = "testInfo">
+
+					<button name = "testResult" id = "buttons" onclick="getAns()">Результат</button>
+					<button name = "testResult" id = "buttons" onclick="ansErase()">Стереть</button>					
+
+				</div>
+
+				<div class="testAnswer" id="testAnswer" ></div>
+				<div class="howDo">
+
+					<input type="image" src="image/que.png" alt="Иконка" id = "faqImage" onclick="solution(6)">
+		
+				 </div>
+
+			</div>
+
+			
+
+		</div>
+		
+	</div>
+
+	<p><a name="eightth" id = "linkInBlock"></a></p>
+
+	<div class = "miniature">
+
+		<p> Не нажимай большую красную кнопку!!! </p>
+
+		<div>
+		
+			<button id = "bigRedButton" onclick="openWindow('inform')"> Большая красная кнопка </button>
+
+		</div>
+
+		<div class="howDo">
+
+			<input type="image" src="image/que.png" alt="Иконка" id = "faqImage" onclick="solution(7)">
+
+ 		</div>
+
+	</div>
+
+
+
+	<script type="text/javascript" src="rememberName.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+	<script type="text/javascript" src="timer.js"></script>
+	<script type="text/javascript" src="testScript.js"></script>
+	<script type="text/javascript" src="theSolutionOfTheProblem.js"></script>
+</body>
+</html>
