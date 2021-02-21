@@ -14,7 +14,7 @@ function Start() {
 		return;
 	}
 
-	let counter = sec + min*60 + hour*60;
+	let counter = sec + min*60 + hour*3600;
 
 	document.getElementById("buttonStart").disabled = true; 
 	document.getElementById("buttonsErase").disabled = true;
